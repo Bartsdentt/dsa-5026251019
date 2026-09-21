@@ -15,3 +15,5 @@ public class LaptopRental extends Rental {
         return "Laptop";
     }
 }
+
+//c

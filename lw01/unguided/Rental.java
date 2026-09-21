@@ -39,3 +39,5 @@ public abstract class Rental implements Chargeable {
         return id + " | " + label() + " | " + calculateCharge();
     }
 }
+
+//c
