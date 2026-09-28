@@ -14,7 +14,7 @@ public class Main {
         Stack<String[]> failed = new Stack<>();
 
         Scanner scanner = new Scanner(
-            Main.class.getResourceAsStream("/lw02/prelab/transactions.txt")
+            Main.class.getResourceAsStream("transactions.txt")
         );
 
         while (scanner.hasNextLine()) {
