@@ -1,6 +1,5 @@
 package lw03.prelab;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -16,8 +15,7 @@ public class Main {
 //prob 1
         List<String> playlist = new ArrayList<>();
 
-        InputStream playlistFile = Main.class.getResourceAsStream("playlist.txt");
-        Scanner scanner1 = new Scanner(playlistFile);
+        Scanner scanner1 = new Scanner(Main.class.getResourceAsStream("playlist.txt"));
 
         while (scanner1.hasNextLine()) {
             String line = scanner1.nextLine();
@@ -58,8 +56,7 @@ public class Main {
         Set<String> participants = new LinkedHashSet<>();
         int duplicateRegistrations = 0;
 
-        InputStream participantsFile = Main.class.getResourceAsStream("participants.txt");
-        Scanner scanner2 = new Scanner(participantsFile);
+        Scanner scanner2 = new Scanner(Main.class.getResourceAsStream("participants.txt"));
 
         while (scanner2.hasNextLine()) {
             String name = scanner2.nextLine();
@@ -90,8 +87,7 @@ public class Main {
         Map<String, Integer> inventory = new LinkedHashMap<>();
         int failedSales = 0;
 
-        InputStream inventoryFile = Main.class.getResourceAsStream("inventory.txt");
-        Scanner scanner3 = new Scanner(inventoryFile);
+        Scanner scanner3 = new Scanner(Main.class.getResourceAsStream("inventory.txt"));
 
         while (scanner3.hasNextLine()) {
             String line = scanner3.nextLine();
